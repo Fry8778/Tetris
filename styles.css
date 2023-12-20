@@ -4,7 +4,7 @@
 
 body{
     /* background: linear-gradient(90deg, rgb(31, 31, 193), rgb(41, 188, 36)); */    
-    background:linear-gradient(90deg,     #2980b9, #6dd5fa, #ffffff);
+    background:linear-gradient(90deg, #2980b9, #6dd5fa, #ffffff);
     height: 100vh;
     user-select: none;
     display: flex;
@@ -13,11 +13,11 @@ body{
 }
 
 .tetris{
-    background-color: #e6e6fa;
+    background-color: #ffd39b;
     padding: 0.5vh;
     border-radius: 0.5vh;
     display: grid;
-    grid-template-columns: repeat(10, auto);
+    grid-template-columns: repeat(11, auto);
     grid-template-rows: repeat(20, auto);
 }
 
