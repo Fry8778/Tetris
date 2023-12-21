@@ -17,7 +17,7 @@ body{
     padding: 0.5vh;
     border-radius: 0.5vh;
     display: grid;
-    grid-template-columns: repeat(11, auto);
+    grid-template-columns: repeat(10, auto);
     grid-template-rows: repeat(20, auto);
 }
 
@@ -40,11 +40,11 @@ body{
 }
 
 .tetris .J{
-    background: rgb(212, 95, 74);
+    background: rgb(247, 34, 69);
 }
 
 .tetris .S{
-    background: rgb(219, 19, 19);
+    background: rgb(192, 8, 8);
 }
 
 .tetris .Z{
