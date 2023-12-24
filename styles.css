@@ -29,6 +29,8 @@ body{
     box-shadow: 
         inset 2px 2px 2px rgba(128, 128, 128, 0.271),
         inset -2px -2px 2px rgba(22, 87, 217, 0.271);
+    
+     color: transparent;   
 } 
 
 .tetris .O{
@@ -58,3 +60,13 @@ body{
 .tetris .I{
     background: rgb(75, 3, 75);
 }
+
+/* .tetris .O,
+.tetris .L,
+.tetris .J,
+.tetris .S,
+.tetris .Z,
+.tetris .T,
+.tetris .I{
+    color: tomato;
+} */
