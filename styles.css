@@ -1,10 +1,20 @@
+
+  @font-face {
+    font-family: 'Games';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Games'), local('Games-Italic'), url(./fonts/Games.ttf) format('truetype'), url('./fonts/Games-Italic.ttf') format('truetype'); 
+    /* src: local('Tetris'), url('./fonts/Tetris.ttf') format('truetype');   */
+
+}
+
 *{
     margin: 0;
 }
 
 body{
     /* background: linear-gradient(90deg, rgb(31, 31, 193), rgb(41, 188, 36)); */    
-    background:linear-gradient(90deg, #2980b9, #6dd5fa, #ffffff);
+    background:linear-gradient(360deg, #2980b9, #6dd5fa, #ffffff);
     height: 100vh;
     user-select: none;
     display: flex;
@@ -13,7 +23,7 @@ body{
 }
 
 .tetris{
-    background-color: #ffd39b;
+    background-color: #ffd49bea;
     padding: 0.5vh;
     border-radius: 0.5vh;
     display: grid;
@@ -30,35 +40,42 @@ body{
         inset 2px 2px 2px rgba(128, 128, 128, 0.271),
         inset -2px -2px 2px rgba(22, 87, 217, 0.271);
     
-     color: transparent;   
+     /* color: transparent;    */
 } 
 
+.score{
+    font-family: 'Games';   
+    /* font-family: Arial; */
+    font-size: 30px;
+    text-align: right;
+}
+   
 .tetris .O{
-    background: rgb(216, 231, 7);
+    background: rgb(227, 243, 4);
 }
 
 .tetris .L{
-    background: rgb(3, 168, 11);
+    background: rgb(14, 201, 23);
 }
 
 .tetris .J{
-    background: rgb(247, 34, 69);
+    background: rgb(102, 159, 245);
 }
 
 .tetris .S{
-    background: rgb(192, 8, 8);
+    background: rgb(255, 21, 21);
 }
 
 .tetris .Z{
-    background: rgb(9, 248, 49);
+    background: rgb(2, 248, 43);
 }
 
 .tetris .T{
-    background: rgb(245, 133, 28);
+    background: rgb(240, 92, 23);
 }
 
 .tetris .I{
-    background: rgb(75, 3, 75);
+    background: rgb(204, 70, 204);
 }
 
 /* .tetris .O,
@@ -70,3 +87,4 @@ body{
 .tetris .I{
     color: tomato;
 } */
+
