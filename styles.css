@@ -1,19 +1,16 @@
 
-  @font-face {
-    font-family: 'Games';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Games'), local('Games-Italic'), url(./fonts/Games.ttf) format('truetype'), url('./fonts/Games-Italic.ttf') format('truetype'); 
-    /* src: local('Tetris'), url('./fonts/Tetris.ttf') format('truetype');   */
-
-}
-
 *{
     margin: 0;
 }
 
-body{
-    /* background: linear-gradient(90deg, rgb(31, 31, 193), rgb(41, 188, 36)); */    
+  @font-face {
+    font-family: 'Games';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Games'), local('Games-Italic'), url(./fonts/Games.ttf) format('truetype'), url('./fonts/Games-Italic.ttf') format('truetype');  
+}
+
+body{      
     background:linear-gradient(360deg, #2980b9, #6dd5fa, #ffffff);
     height: 100vh;
     user-select: none;
@@ -45,7 +42,6 @@ body{
 
 .score{
     font-family: 'Games';   
-    /* font-family: Arial; */
     font-size: 30px;
     text-align: right;
 }
@@ -76,6 +72,29 @@ body{
 
 .tetris .I{
     background: rgb(204, 70, 204);
+}
+
+.game-over{
+    position: fixed;
+    background-color: rgba(14, 11, 11, .5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart{
+    padding: 35px;
+    border: none;
+    border-radius: 55px; 
+    background-color: rgb(140,16,68);
+    color: #fff;
+    font-family: 'Games-Italic';
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* .tetris .O,
