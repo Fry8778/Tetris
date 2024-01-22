@@ -64,7 +64,7 @@ export function onKeyDown(event){
 }
 
 export function dropTedrotrominoDown(){
-    while(!isValid()){
+while(!isValid()){
         tetromino.row++;
 
     }

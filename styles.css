@@ -35,9 +35,7 @@ body{
     border-radius: 0.5vh;
     box-shadow: 
         inset 2px 2px 2px rgba(128, 128, 128, 0.271),
-        inset -2px -2px 2px rgba(22, 87, 217, 0.271);
-    
-     /* color: transparent;    */
+        inset -2px -2px 2px rgba(22, 87, 217, 0.271);   
 } 
 
 .score{
@@ -96,14 +94,4 @@ body{
     font-weight: bold;
     cursor: pointer;
 }
-
-/* .tetris .O,
-.tetris .L,
-.tetris .J,
-.tetris .S,
-.tetris .Z,
-.tetris .T,
-.tetris .I{
-    color: tomato;
-} */
 

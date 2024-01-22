@@ -6,7 +6,7 @@ import{
     gameOverBlock,
     btnRestart,
 } from './utils.js';
-import {onKeyDown}  from './keydownEvents.js';
+// import {onKeyDown}  from './keydownEvents.js';
 import {moveTetrominoDown}  from './keydownEvents.js';
 
 
@@ -21,11 +21,6 @@ export let playfield,
             isGameOver = false;
 init();
 
-
-// document.addEventListener('keydown', onKeyDown)
-// btnRestart.addEventListener('click', function(){
-//     init();
-// });
 
 export function init(){
     gameOverBlock.style.display = 'none';
@@ -57,33 +52,21 @@ function generatePlayfield() {
     // console.log(playfield);
 }
 
-// function getRandomFigureColor() {
-//   return `#${Math.floor(Math.random() * 16777215)
-//     .toString(16)
-//     .padStart(6, 0)}`;
-// }
-
-function generateTetromino(){
-
-    // const nameTetro = 'I';
+export function generateTetromino(){
+   
     const nameTetro = getRandomElement(TETROMINO_NAMES); 
     const matrixTetro = TETROMINOES[nameTetro];
     
     // const rowTetro = 3;
     const rowTetro = -2;
     const columnTetro = Math.floor(PLAYFIELD_COLUMNS / 2 - matrixTetro.length / 2);
-    // const columnTetro = 4;
-
-    // const colorTetro = getRandomFigureColor();
+    
 
     tetromino = {
         name: nameTetro,
         matrix: matrixTetro,
         row: rowTetro,
-        column: columnTetro,
-
-        // color: colorTetro,
-
+        column: columnTetro,     
     }
 }
 
@@ -112,15 +95,12 @@ function drawTetromino (){
             if(tetromino.matrix[row][column] == 0) { continue }   
             const cellIndex = convertPositionToIndex(tetromino.row + row, tetromino.column + column);    
             cells[cellIndex].classList.add(name); 
-
-            // cells[cellIndex].style.backgroundColor = tetromino.color;
         }
     }
 }
 
 export function draw(){
-    cells.forEach(function(cell){cell.removeAttribute('class')
-    // cell.style.backgroundColor = "rgba(97, 75, 75, 0.2)";
+    cells.forEach(function(cell){cell.removeAttribute('class')  
 });    
     drawPlayField();
     drawTetromino();
@@ -162,7 +142,7 @@ function GameOver(){
 
 // ]
 
-function getRandomElement(array){
+export function getRandomElement(array){
     const randomIndex = Math.floor(Math.random() * array.length);
     return array[randomIndex];
 }
