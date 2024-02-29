@@ -7,7 +7,19 @@
     font-family: 'Games';
     font-style: normal;
     font-weight: 400;
-    src: local('Games'), local('Games-Italic'), url(./fonts/Games.ttf) format('truetype'), url('./fonts/Games-Italic.ttf') format('truetype');  
+    src: local('Games'), url(./fonts/Games.ttf) format('truetype');  
+}
+  @font-face {
+    font-family: 'Games-Italic';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Games-Italic'), url(./fonts/Games-Italic.ttf) format('truetype');  
+}
+  @font-face {
+    font-family: 'Tetris';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Tetris'), url(./fonts/Tetris.ttf) format('truetype');  
 }
 
 body{      
@@ -42,6 +54,7 @@ body{
     font-family: 'Games';   
     font-size: 30px;
     text-align: right;
+    color: #271B80;
 }
    
 .tetris .O{
@@ -87,11 +100,11 @@ body{
     border: none;
     border-radius: 55px; 
     background-color: rgb(140,16,68);
-    color: #fff;
+    color: turquoise;
     font-family: 'Games-Italic';
     text-transform: uppercase;
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 50px;
+    /* font-weight: bold; */
     cursor: pointer;
 }
 
